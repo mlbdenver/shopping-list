@@ -1,0 +1,219 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One|Dosis|Overlock|Patrick+Hand|Rammetto+One|Poiret+One|Boogaloo|Handlee|Delius|Ruluko|Maven+Pro);
+
+/*Notes
+
+Determine if flexbox is necessary
+Make list stack under input (image disappears) on phone screen
+*/
+/*--------CSS RESET ---------- */
+
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:62.5%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/*--------Beginning of Site CSS---------- */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---Use for site building --- 
+
+div {
+  border:1px red solid;
+  } */
+
+body {
+  width:100%;
+  margin: 0;
+  padding:0;
+  font-family: "Poiret One", Arial, sans-serif;
+  font-size:1.8rem;
+  
+  background-color: #EAE4D9;
+}
+
+h1 h2 h3 h4 {
+    font-weight: normal;
+ }
+
+h1 {
+    font-size: 4.8rem;
+  line-height: 5rem;
+ }
+
+h2 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  }
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.6rem
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+.main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+   -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banner {
+  height: 120px;
+  width: 100%;
+  background: url('../images/seashells.png') no-repeat center center fixed;
+  text-align: center;
+  padding: 24px 20px;
+  vertical-align: middle;
+
+}
+.split {
+  width:50%;
+    padding:2% 2%;
+}
+.main img {
+  display:block;
+  max-width: 60%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box, .item {
+  font-size: 1.8rem;
+  height: 3rem;
+  width: 280px;
+  line-height: 30px;
+  border: 2px gray solid;
+  background-color: white;
+  margin: 5px auto 0 auto; 
+  list-style: none;
+  padding: 0 6px;
+  text-align: left;
+  font-family: Handlee, sans-serif;
+}
+
+.entry .button {
+  font-size: 1.8rem;
+  height: 30px;
+  width: 70px;
+  line-height: 30px;
+  border-radius: 4px;
+  background-color: #A8D8D8;
+  margin: 10px auto; 
+  text-align: center;
+  vertical-align: middle;
+}
+.list {
+    text-align: center;
+}
+ul { 
+padding: 20px;
+}
+
+@media (max-width: 640px) {
+.main {
+
+}
+.main img {
+display: none;
+}
+.split {
+  width:100%;
+}
+}
+
