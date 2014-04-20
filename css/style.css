@@ -101,7 +101,7 @@ input, select {
   padding: 0;
 }
 
-/* ---Use for site building --- 
+ /*---Use for site building --- 
 
 div {
   border:1px red solid;
@@ -113,7 +113,7 @@ body {
   padding:0;
   font-family: "Poiret One", Arial, sans-serif;
   font-size:1.8rem;
-  background-color: #F0F0D8;
+  background-color: #d9ceb2;
 }
 
 h1 h2 h3 h4 {
@@ -129,14 +129,9 @@ h2 {
   font-size: 3rem;
   line-height: 3.3rem;
   }
-h3 {
-  font-size: 2.4rem;
-  line-height: 2.6rem
-}
-
-h4 {
+p {
   font-size: 2rem;
-  line-height: 2.3rem;
+  line-height: 2.4rem;
 }
 .main {
   display: -webkit-box;
@@ -154,15 +149,15 @@ h4 {
 .banner {
   height: 120px;
   width: 100%;
-  background: url('../images/seashells.png') center;
-  text-align: center;
+  background: radial-gradient(#d9ceb2, #948c75);
   padding: 24px 20px;
-  vertical-align: middle;
+  text-align: center;
 }
 
 .split {
   width:50%;
     padding:2% 2%;
+    text-align: center;
 }
 .main img {
   display:block;
@@ -172,34 +167,38 @@ h4 {
   margin-left: auto;
 }
 
-.box, .item {
+.item, #newitem {
   font-size: 1.8rem;
-  height: 3rem;
+  height: 4rem;
   width: 280px;
   line-height: 30px;
   border: 1px #bbb solid;
   background-color: white;
   margin: 5px auto 0 auto; 
   list-style: none;
-  padding: 0 6px;
+  padding: .5rem 6px;
   text-align: left;
   font-family: Handlee, sans-serif;
   border-radius: 4px;
   box-shadow: inset 0 3px 8px #ccc;
 }
-.box:hover, .item:hover {
-  border: 1px #A1D0D8 solid;
-  box-shadow: inset 0 3px 8px ##A1D0D8;
+#newitem:hover, .item:hover {
+  background-color: #d5ded9;
+
 }
-.entry .button {
+#newitem:focus {
+  outline: none;
+}
+
+.entry #button {
   cursor: pointer;
   font-size: 1.6rem;
-  padding: .5rem 1rem;
-  height: 26px;
+  padding: .5rem .5rem;
+  height: 4rem;
   width: 70px;
   line-height: 2.0rem;
   border-radius: 3px;
-  background-color: #789090;
+  background-color: #99b2b7;
   margin: 10px auto; 
   text-align: center;
   vertical-align: middle;
@@ -207,6 +206,21 @@ h4 {
 }
 .list {
     text-align: center;
+}
+.item {
+  position: relative;
+}
+.dimmed {
+  text-decoration: line-through;
+}
+
+.deletex {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  top: 10px;
+  display: none;
+  border: none;
 }
 ul { 
 padding: 20px;

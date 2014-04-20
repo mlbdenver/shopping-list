@@ -15,10 +15,9 @@
   <section class="main">
     <div class="split">
       <div class="entry">
-        <div class="box">Enter item here</div>
-        <div class="box">Enter quantity here</div>
-        <div class="button">Submit</div>
-              </div>
+        <input type="text" id="newitem" placeholder="Enter item here" maxlength="40">
+        <input type="submit" id="button" value="Submit">
+      </div>
       <div class="cart">
         <img src="images/shopping-cart1.png" alt="cart">
       </div>
@@ -26,14 +25,12 @@
     <div class="split">
       <div class="list">
       <h2>Your shopping list:</h2>
-          <ul>
-          <li class="item">Item 1</li>
-          <li class="item">Item 2</li>
-          <li class="item">Item 3</li>
-          <li class="item">Item 4</li>
-          <li class="item">Item 5</li>
+          <ul id="grocerylist">
+          <li class="item">Ice cream<button class="deletex">X</button></li>
+          
         </ul>
-        <h4>To remove an item, click on it</h4>
+        <p>To cross out an item, click on it</p>
+        <p>To delete an item, click on the X</p>
       </div>
      </div>
   </section>
